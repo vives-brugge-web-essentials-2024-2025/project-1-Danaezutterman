@@ -125,15 +125,10 @@ nav ul li a:hover {
 }
 
 #naarboven{
-    cursor: pointer;
-    position: fixed;
-    bottom: 2rem;
-    right: 2.5rem;
-    width: 2rem;
-    height: 1.2rem;
-    background-color: var(#dc322f);
-    mask: url(../images/back-to-top-8efcbe56.svg) no-repeat;
-    z-index: var(10);
+    display: inline-block; /* Maakt het makkelijker om padding en marges toe te voegen */
+    position: fixed; /*zorgt ervoor dat het rechts blijft staan */
+    bottom: 20px;
+    right: 20px;
 }
 #naarboven:hover{
     color: #16a085; /* Donkerdere groene tint bij hover */
