@@ -1,0 +1,347 @@
+/* CSS reset code */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset,form,label,legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/*Algemene stijl*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #81f3d8;
+    font-size: 90%;
+  }
+
+/*Hoofding*/
+#top{
+    background-image: url("../images/Klimaat-thema-afbeelding-header.png");
+    background-size: cover; /*afbeelding over de volledige container*/
+    background-position: center; /*afbeelding gecentreerd*/
+    height: 400px; /*aanpassing hoogte*/
+    display: flex;/*inhoud centreren*/
+    align-items: center; /*verticaal centreren*/
+    justify-content: center; /*horizontaal centreren*/
+    text-align: center; /*centeren van de tekst*/
+    color: white;
+}
+#h1{
+    font-size: 30px;
+    color:white;
+}
+
+#p1{
+    display: block; /* Standaard, zorgt dat de paragraaf op een nieuwe regel staat */
+    margin-top: 10px; /* Optioneel: voeg wat ruimte toe boven de paragraaf */
+}
+
+/*Navigatie balk*/
+nav {
+    background-color: #333; /* Donkere achtergrondkleur voor de navigatiebalk */
+    padding: 10px; /* Ruimte binnen de navigatiebalk */
+}
+
+/* Verwijdert standaard lijststijl van de unordered list */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Zet de lijstitems horizontaal naast elkaar */
+    justify-content: center; /* Centreert de items horizontaal */
+}
+
+/* Stijl voor lijstitems */
+nav ul li {
+    margin: 0 15px; /* Ruimte tussen de lijstitems */
+}
+
+/* Stijl voor de links in de lijst */
+nav ul li a {
+    text-decoration: none; /* Verwijdert onderlijning van de links */
+    color: white; /* Witte tekstkleur */
+    font-size: 16px; /* Grotere tekst voor betere leesbaarheid */
+    transition: color 0.3s ease; /* Animatie-effect bij hover */
+}
+
+/* Hover effect voor de links */
+nav ul li a:hover {
+    color: #1abc9c; /* Verandert de kleur bij hover naar een groene tint */
+}
+
+/*sectie 1*/
+#sectie1 {
+    background-color: #c7f1f7; /* Lichtblauwe achtergrondkleur */
+    padding: 20px; /* Ruimte rondom de inhoud binnen de sectie */
+    border-radius: 8px; /* Ronde hoeken voor een modern uiterlijk */
+    max-width: cover; /* Leesbaarheid over de volledige container */
+    margin: 20px auto; /* Centreert de sectie op de pagina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+}
+
+#h2{
+    font-size: 24px; /* Grotere tekst voor de kop */
+    color: #2b86be; /* Donkere tekstkleur */
+    text-align: center; /* Centreert de koptekst */
+    margin-bottom: 15px; /* Ruimte onder de koptekst */
+}
+
+#p2{
+    font-size: 16px; /* Basistekstgrootte */
+    color: #333; /* Donkere tekstkleur voor tekst */
+    margin: 10px 0; /* Ruimte tussen paragrafen */
+}
+
+#team-members{
+    display: flex; /* Zorgt ervoor dat de naam en foto naast elkaar staan */
+    align-items: center; /* Centreert de items verticaal */
+    gap: 15px; /* Ruimte tussen de foto en de naam */
+    margin: 20px 0; /* Ruimte tussen de teamleden */
+    flex-wrap: wrap; /* Laat de afbeeldingen naar de volgende rij gaan als er niet genoeg ruimte is */
+}
+
+#team-members img{
+    width: 150px; /* Vast formaat voor de foto's */
+    height: 150px; /* Vierkante foto's */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding binnen de vierkant past zonder vervorming */
+    border-radius: 100%; /* Maakt de foto's cirkelvormig */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+#naarboven{
+    display: inline-block; /* Maakt het makkelijker om padding en marges toe te voegen */
+    position: fixed; /*zorgt ervoor dat het rechts blijft staan */
+    bottom: 20px;
+    right: 20px;
+}
+#naarboven:hover{
+    color: #16a085; /* Donkerdere groene tint bij hover */
+}
+
+/*sectie 2*/
+#sectie2{
+    background-color: #e1f2f5; /* witte achtergrondkleur */
+    padding: 20px; /* Ruimte binnen de sectie */
+    border-radius: 8px; /* Ronde hoeken voor de sectie */
+    max-width: cover; /* Leesbaarheid over de volledige container */
+    margin: 20px auto; /* Centreert de sectie op de pagina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+}
+
+#img-row{
+    display: flex; /* Flexbox om afbeeldingen naast elkaar te plaatsen */
+    justify-content: center; /* Centreert de rij met afbeeldingen horizontaal */
+    gap: 10px; /* Ruimte tussen de afbeeldingen */
+    margin-top: 15px; /* Ruimte boven de afbeeldingengroep */
+}
+
+#img-row img{
+    width: 100%; /* Laat de afbeelding de volledige breedte van de container innemen */
+    max-width: 200px; /* Limiteert de breedte van de afbeeldingen */
+    height: auto; /* Houdt de originele hoogte-breedteverhouding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding netjes in de container past */
+}
+
+/*sectie 3*/
+#sectie3{
+    background-color: #c7f1f7; /* Lichtblauwe achtergrondkleur */
+    padding: 20px; /* Ruimte rondom de inhoud binnen de sectie */
+    border-radius: 8px; /* Ronde hoeken voor een modern uiterlijk */
+    max-width: cover; /* Leesbaarheid over de volledige container */
+    margin: 20px auto; /* Centreert de sectie op de pagina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#h3{
+    font-size: 20px; /* Grotere tekst voor de kop */
+    color: #2b86be; /* Donkere tekstkleur */
+    margin-bottom: 15px; /* Ruimte onder de koptekst */
+}
+
+#oplossingblok{
+    display: flex; /* Flexbox voor het uitlijnen van tekst en afbeelding */
+    flex-direction: row;
+    align-items: center; /* Centreert de afbeelding verticaal naast de tekst */
+    gap: 15px; /* Ruimte tussen tekst en afbeelding */
+    max-width: 1000px; /* Past aan naar wens */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#oplossingblok div{
+    flex: 1;
+}
+
+#oplossingblok img{
+    width: 300px; /* Stel de breedte van de afbeelding in */
+    height: 3009x; /* Houdt de oorspronkelijke hoogte/breedte-verhouding */
+    border-radius: 8px; /* Ronde hoeken voor een moderne look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding netjes wordt weergegeven */
+    margin-left: auto; /* Zorgt dat de afbeelding rechts blijft */
+}
+
+/*sectie 4*/
+#sectie4{
+    background-color: #e1f2f5; /* witte achtergrondkleur */
+    padding: 20px; /* Ruimte binnen de sectie */
+    border-radius: 8px; /* Ronde hoeken voor de sectie */
+    max-width: cover; /* Leesbaarheid over de volledige container */
+    margin: 20px auto; /* Centreert de sectie op de pagina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+    gap: 20px; /* Ruimte tussen de contact-info en het formulier */
+    flex-wrap: wrap; /* Zorgt ervoor dat elementen naar een nieuwe regel gaan indien nodig */
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 20px;
+}
+#contactinfo{
+    flex: 1; /* Laat de contact-info een deel van de ruimte innemen */
+    text-align: left;
+    min-width: 300px;
+}
+
+#p3{
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    display: flex; /* Voor uitlijning van iconen en tekst */
+    align-items: center;
+    gap: 10px;
+}
+
+#p3 img{
+    width: 20px;
+    height: 20px;
+    margin-right:  10px;
+}
+
+#social-icons{
+    display: flex;
+    gap: 10px;
+}
+
+#social-icons img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Optioneel: ronde iconen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#social-icons img:hover{
+    transform: scale(1.1); /* Vergroot het icoon bij hover */
+}
+
+#contact-form{
+    flex: 1; /* Laat het formulier ook een deel van de ruimte innemen */
+    min-width: 300px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#input-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#input-group img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+#input-group input{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#textarea{
+    min-height: 100px;
+    resize: none;
+    background-color: #e6e6e6;
+}
+
+#button{
+    background-color: #1abc9c; /* Groene kleur */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /*overgan op achtergrond duur en snel*/
+}
+
+#button:hover{
+    background-color: #16a085; /* Donkerdere groene tint bij hover */
+}
+
+/*footer*/
+
+#einde{
+    background-color: #c7f1f7; /* Lichtblauwe achtergrondkleur */
+    padding: 20px; /* Ruimte rondom de inhoud binnen de sectie */
+    border-radius: 8px; /* Ronde hoeken voor een modern uiterlijk */
+    max-width: cover; /* Leesbaarheid over de volledige container */
+    margin: 20px auto; /* Centreert de sectie op de pagina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+}
+
+#p4{
+    text-align: center;
+    margin:0;
+}
